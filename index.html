@@ -21,6 +21,7 @@
       main { padding: 72px 0 52px; }
       .intro { padding: 24px 0 68px; }
       .eyebrow { margin: 0 0 12px; color: var(--accent); font-size: 0.92rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+      .profile-photo { display: block; width: 132px; height: 132px; margin: 0 0 22px; border: 5px solid var(--paper); border-radius: 50%; object-fit: cover; object-position: center; box-shadow: 0 8px 24px rgba(23, 32, 42, 0.14); }
       h1, h2 { line-height: 1.2; }
       h1 { margin: 0; font-size: clamp(2.5rem, 8vw, 5.2rem); letter-spacing: -0.06em; }
       .lead { max-width: 620px; margin: 25px 0 0; color: var(--muted); font-size: clamp(1.08rem, 2.6vw, 1.3rem); }
@@ -31,7 +32,7 @@
       .interests li { padding: 7px 13px; border-radius: 999px; color: var(--accent); background: var(--accent-soft); font-size: 0.95rem; font-weight: 650; }
       .contact-link { color: var(--accent); font-weight: 700; text-underline-offset: 3px; }
       footer { padding: 0 0 38px; color: var(--muted); font-size: 0.9rem; }
-      @media (max-width: 560px) { .wrap { width: min(100% - 32px, 880px); } header { padding: 18px 0; } .nav-links { gap: 13px; font-size: 0.88rem; } main { padding-top: 48px; } .intro { padding-bottom: 42px; } section { padding: 26px 22px; } }
+      @media (max-width: 560px) { .wrap { width: min(100% - 32px, 880px); } header { padding: 18px 0; } .nav-links { gap: 13px; font-size: 0.88rem; } main { padding-top: 48px; } .intro { padding-bottom: 42px; } .profile-photo { width: 108px; height: 108px; } section { padding: 26px 22px; } }
     </style>
   </head>
   <body>
@@ -44,6 +45,7 @@
     <main id="top" class="wrap">
       <div class="intro">
         <p class="eyebrow">Personal website</p>
+        <img class="profile-photo" src="assets/profile.jpg" alt="Ian Kim의 프로필 사진" />
         <h1>안녕하세요,<br />Ian Kim입니다.</h1>
         <p class="lead">배우고, 만들고, 조금씩 더 나은 아이디어를 찾아가는 사람입니다.</p>
       </div>
